@@ -1,0 +1,10 @@
+public 	Boolean isVisible(FormInstance instance)
+		{
+			try{
+				
+				return  (Boolean)RunJavaScriptEngine.generateValidate(preProcesador).invokeFunction("isVisible", this,instance);
+			
+			}catch(Exception u){
+				return true;
+			}
+		}
