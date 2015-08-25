@@ -1,0 +1,20 @@
+
+		Question = new Question();
+		Question.name="Resultado de prueba de embarazo";
+		Question.key = "2e61ab9b-ce31-40d1-9914-9637fc7d7c43";
+		Question.type = TypeQuestion.CHOICE;
+		Question.oecode = "alt.labs.result.pregnancy";
+		Question.processor =  "function isVisible(form, instance)"+
+				"{"+
+				"var patient = instance.getPatient();"+
+				
+					"if(patient.sex.equals('F'))"+
+					"{ "+
+							"return true;"+
+						
+				    "}"+
+									
+				"return false;"+
+			"}";
+		
+		Question.options = lstOpcionesChief;
